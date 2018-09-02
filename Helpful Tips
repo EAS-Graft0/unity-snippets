@@ -1,0 +1,7 @@
+Helpful Tips
+
+
+Alt + Click expands all children
+
+Instantiate doesn't return as a rigid body so use 'as Rigidbody'
+

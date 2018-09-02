@@ -1,0 +1,9 @@
+Camera Controls
+
+<camera>.transform.LookAt(object)
+
+
+orthagraphic vs projection
+
+there is no change in scale over distance
+size changes the zoom 

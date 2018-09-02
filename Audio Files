@@ -1,0 +1,5 @@
+Audio Files
+
+Can have same audio file and change pitch, can use random.range()
+
+Have to play audio clip again once it's changed

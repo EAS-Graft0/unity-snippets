@@ -1,0 +1,13 @@
+Controller Things
+
+
+Update() runs all the time
+	For things that happen constantly
+
+Fixed_Update() runs every physics step
+	For things that happen on change or not often
+	
+Start() called when game starts
+
+
+Awake() called when game is ready <-- better for assigning variables

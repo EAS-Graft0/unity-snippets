@@ -1,0 +1,5 @@
+Creating player
+
+add rigidbody
+	use constraints on y for position and x and z for rotation
+	drag and anular drag set to infinity

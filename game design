@@ -1,0 +1,202 @@
+DEATHMATCH IO
+
+WHAT I NEED
+
+folders: {
+	animation: {
+		enemies,
+		players,
+		ui,
+		hud
+	},
+	audio: {
+		effects{
+			player,
+			ai,
+			scene
+		},
+		mixers: {
+			master: {
+				master,
+				music,
+				effects,
+				paused,
+				unpaused
+				},
+			effects: {
+				enemies,
+				gunshots,
+				master,
+				player,
+				snapshot
+			}
+		},
+		music: {
+			background music
+		}
+	},
+	fonts: {
+		fonts used
+	},
+	gi parameters: { //lights maybe? global illumination
+		details,
+		emmisive,
+		extends,
+		floor,
+		walls
+	},
+	nav_meshes: {
+		any ai nav mesh
+	},
+	materials: {
+		all materials for all game objects
+	},
+	models: {
+		characters: {
+			player: {
+				main body,
+				weapon,
+				animation sequences,
+				avatar
+			},
+			enemies: {
+				main body,
+				waepon if any,
+				animation sequences,
+				avatar
+			}
+		},
+		environment: {
+			all scenery objects: {
+				main object
+			}
+		}
+	},
+	prefabs: {
+		all prefabs
+	},
+	scenes: {
+		levels
+	},
+	scripts: {
+		camera: {
+			player follow?
+		},
+		enemy: {
+			attack,
+			move,
+			health,
+			other
+		},
+		managers: {
+			enemy manager/spawn,
+			game manager/losing/winning,
+			score manager,
+			other
+		},
+		player: {
+			move,
+			attack,
+			health,
+			other
+		}
+	},
+	textures: {
+		all textures for materials
+	},
+	packages: {
+		in-app purchases,
+		adds,
+		other
+	}
+}
+
+hierarchy/layers: {
+	scene: {
+		main camera,
+		player: {
+			player,
+			weapon
+		},
+		environment: {
+			colliders: {
+				level extents,
+				all other scene objects
+			},
+			game objects: {
+				all scenery
+			},
+			floor: {
+				base,
+				object,
+				sides
+			}
+			//consider putting colliders in the game objects
+		},
+		lights: {
+			scene lighting,
+			light probe group,
+			reflection probe
+		},
+		floor - quad - mesh collider,
+		background music,
+		hud - canvas: {
+			health bar,
+			game over text,
+			start screen,
+			score,
+			other
+		},
+		event system: comes with canvas,
+		enemy manager - add script for spawns,
+		spawn points - null objects
+	}
+}
+
+
+game: {
+	main_camera: {
+		follow character
+		zoomable?
+		no rotate, iso view
+	},
+	lights: {
+		scene_lighting:{
+			main light
+			shine down onto everything
+		},
+		light_probe_group: {
+			dotted around everywhere
+			google main functionality
+		},
+		reflection_probe: {
+			importance 1
+			intensity 1
+			baked
+			hdr
+			res 128
+			shadow distance 100
+			skybox clear flags
+			bg colour
+			culling mask everything
+			use occlusion culling
+			clipping planes - near 0.3, far 1000
+		}
+	},
+	music: {
+		backround music
+		effects
+
+	}
+}
+
+
+
+
+use lots of animations from mixamo
+
+
+
+
+how to add an animation
+

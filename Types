@@ -1,0 +1,12 @@
+Types
+
+Vector 3
+	3d object for most transformation, parameters (x,y,z)
+
+Time
+	deltaTime
+		every second rather than every frame
+
+
+Quaternion
+	3d object for rotation, takes vector 3
