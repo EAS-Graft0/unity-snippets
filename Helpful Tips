@@ -5,3 +5,11 @@ Alt + Click expands all children
 
 Instantiate doesn't return as a rigid body so use 'as Rigidbody'
 
+ColourUltilityToHtmlStringRGB(colour here) this can colour text that is shown in the canvas
+
+
+MeshRenderer[] renderers = = <object instance>.GetComponentsInChildren<MeshRenderers>();
+for(int i = 0; i< renderers.length; i++){
+	renderers[i].material.color = [a colour you want]
+}
+to set colour of all mesh renderers
